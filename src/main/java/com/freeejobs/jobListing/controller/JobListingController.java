@@ -426,8 +426,6 @@ public class JobListingController {
 			
 		} catch (Exception e) {
 			System.out.println(e);
-//			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-//			return null;
 			responseStatus = new Status(Status.Type.INTERNAL_SERVER_ERROR, "Failed to get Completed JobListing By Id, Exception.");
 			LOGGER.error(e.getMessage(), e);
 		}
